@@ -76,3 +76,13 @@ form button {
   height: 2.5rem;
   cursor: pointer;
 }
+.dropdown i {
+    cursor: pointer;
+    transition:  0.3s ease;
+}
+
+.dropdown i:hover {
+    transform: rotate(180deg) scale(1.2); /* Click korar age ektu ghure jabe */
+    color: #4b22b1; /* Color ektu change hobe */
+    
+}

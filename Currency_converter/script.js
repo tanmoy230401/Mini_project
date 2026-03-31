@@ -73,3 +73,23 @@ btn.addEventListener("click", (evt) => {
 window.addEventListener("load", () => {
   updateExchangeRate();
 });
+
+
+
+const fromSelect = document.querySelector(".from select");
+const toSelect = document.querySelector(".to select");
+const swapIcon = document.querySelector(".dropdown i");
+
+
+swapIcon.addEventListener("click", () => {
+    console.log("Swap button clicked!"); 
+
+  
+    let tempValue = fromSelect.value;
+    fromSelect.value = toSelect.value;
+    toSelect.value = tempValue;
+
+    updateFlag(fromSelect);
+    updateFlag(toSelect);
+    updateExchangeRate();
+});
